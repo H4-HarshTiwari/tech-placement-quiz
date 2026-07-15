@@ -13,4 +13,4 @@ A 20-question tech placement quiz app covering DSA, Java, Web Dev, DBMS, OS, and
 HTML, CSS, JavaScript, Chart.js
 
 ## Live Demo
-[Add your GitHub Pages / hosted link here once deployed]
+https://h4-harshtiwari.github.io/tech-placement-quiz/
