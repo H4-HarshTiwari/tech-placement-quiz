@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tech Placement Quiz (20 Questions)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="title">🚀 Tech Placement Quiz</div>
+    <div class="controls">
+      <button id="themeToggle" class="btn">🌙</button>
+      <button id="submitBtn" class="btn primary">Submit Quiz</button>
+    </div>
+  </header>
+
+  <main class="main">
+    <aside class="sidebar">
+      <h3>Questions</h3>
+      <div id="qNumbers" class="q-numbers"></div>
+      <div class="legend">
+        <div><span class="dot attempted"></span> Attempted</div>
+        <div><span class="dot marked"></span> Marked</div>
+        <div><span class="dot unanswered"></span> Unanswered</div>
+      </div>
+    </aside>
+
+    <section class="quiz-area">
+      <div id="questionCard" class="card">
+        <div class="q-header">
+          <div id="qIndex">Question 1 / 20</div>
+          <div>
+            <button id="markBtn" class="btn">Mark for Review</button>
+          </div>
+        </div>
+
+        <div id="qText" class="q-text">Loading question...</div>
+        <form id="optionsForm" class="options"></form>
+
+        <div class="nav-buttons">
+          <button id="prevBtn" class="btn">◀ Previous</button>
+          <button id="nextBtn" class="btn">Next ▶</button>
+        </div>
+      </div>
+
+      <div id="resultArea" class="card results hidden">
+        <canvas id="resultChart" width="200" height="200"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>Built with ♥️ • Explain each answer in viva confidently.</small>
+  </footer>
+
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
